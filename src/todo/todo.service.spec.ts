@@ -74,7 +74,6 @@ describe('TodoService', () => {
     jest.spyOn(repository, 'findOneBy').mockResolvedValue(todo);
 
     const res = await service.findOne('4');
-    console.log(res);
     expect(res).toEqual(todo);
   });
 
